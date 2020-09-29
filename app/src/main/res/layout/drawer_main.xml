@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="220dp"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:layout_marginTop="-46dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="86dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="2dp"
+            android:src="@drawable/app_drawer_top_image" />
+
+        <com.andexert.library.RippleView
+            app:rv_color="@color/colorTextGray"
+            app:rv_rippleDuration="200"
+            app:rv_centered="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/app_drawer_sync_button" />
+        </com.andexert.library.RippleView>
+
+        <TextView
+            android:id="@+id/drawerUsername"
+            fontPath="fonts/Roboto-Light.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="24dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+    </FrameLayout>
+
+    <com.andexert.library.RippleView
+        app:rv_color="@color/colorTextGray"
+        app:rv_rippleDuration="200"
+        app:rv_centered="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:id="@+id/drawerNotes"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/app_drawer_notes_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:text="Notes"
+                android:textColor="@color/colorTextDargGray"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </com.andexert.library.RippleView>
+
+    <com.andexert.library.RippleView
+        app:rv_color="@color/colorTextGray"
+        app:rv_rippleDuration="200"
+        app:rv_centered="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:id="@+id/drawerAlarms"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/app_drawer_alarms_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:text="Alarms"
+                android:textColor="@color/colorTextDargGray"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </com.andexert.library.RippleView>
+
+    <com.andexert.library.RippleView
+        app:rv_color="@color/colorTextGray"
+        app:rv_rippleDuration="200"
+        app:rv_centered="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:id="@+id/drawerLists"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/app_drawer_lists_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:text="Alarms"
+                android:textColor="@color/colorTextDargGray"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </com.andexert.library.RippleView>
+
+    <com.andexert.library.RippleView
+        app:rv_color="@color/colorTextGray"
+        app:rv_rippleDuration="200"
+        app:rv_centered="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:layout_width="186dp"
+            android:layout_height="40dp"
+            android:layout_gravity="start"
+            android:background="@drawable/app_drawer_premium_button"
+            android:paddingBottom="4dp"
+            android:text="PREMUIM"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+    </com.andexert.library.RippleView>
+
+    <ImageView
+        android:layout_width="186dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/app_drawer_divider_line_1" />
+
+    <com.andexert.library.RippleView
+        app:rv_color="@color/colorTextGray"
+        app:rv_rippleDuration="200"
+        app:rv_centered="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="4dp">
+
+        <LinearLayout
+            android:id="@+id/drawerTags"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/app_drawer_hashtag_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:text="Tags"
+                android:textColor="@color/colorTextDargGray"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="4dp"
+                android:layout_marginStart="4dp"
+                android:src="@drawable/app_drawer_tags_menu_down_button" />
+        </LinearLayout>
+    </com.andexert.library.RippleView>
+
+    <ImageView
+        android:layout_width="186dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/app_drawer_divider_line_1" />
+
+    <com.andexert.library.RippleView
+        app:rv_color="@color/colorTextGray"
+        app:rv_rippleDuration="200"
+        app:rv_centered="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:id="@+id/drawerSettings"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/app_drawer_settrings_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:text="Settings"
+                android:textColor="@color/colorTextDargGray"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </com.andexert.library.RippleView>
+
+    <com.andexert.library.RippleView
+        app:rv_color="@color/colorTextGray"
+        app:rv_rippleDuration="200"
+        app:rv_centered="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:id="@+id/drawerArchive"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/app_drawer_archieve_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:text="Archive"
+                android:textColor="@color/colorTextDargGray"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </com.andexert.library.RippleView>
+
+    <com.andexert.library.RippleView
+        app:rv_color="@color/colorTextGray"
+        app:rv_rippleDuration="200"
+        app:rv_centered="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:id="@+id/drawerTrash"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/app_drawer_trash_bin_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:text="Deleted"
+                android:textColor="@color/colorTextDargGray"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </com.andexert.library.RippleView>
+</LinearLayout>

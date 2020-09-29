@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.andexert.library.RippleView
+            app:rv_centered="true"
+            app:rv_rippleDuration="150"
+            android:id="@+id/mainMenuRipple"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/mainMenu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="18dp"
+                android:src="@drawable/main_screen_menu_button" />
+        </com.andexert.library.RippleView>
+
+        <TextView
+            android:id="@+id/mainTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/mainMenuRipple"
+            android:layout_toRightOf="@id/mainMenuRipple"
+            android:text="Organizer"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <com.andexert.library.RippleView
+            app:rv_centered="true"
+            app:rv_rippleDuration="150"
+            android:layout_width="40dp"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:id="@+id/mainViewTypeRipple"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/mainViewType"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:src="@drawable/main_screen_change_view_button" />
+        </com.andexert.library.RippleView>
+
+        <com.andexert.library.RippleView
+            app:rv_centered="true"
+            app:rv_rippleDuration="150"
+            android:layout_width="40dp"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_toLeftOf="@id/mainViewTypeRipple"
+            android:layout_toStartOf="@id/mainViewTypeRipple">
+
+            <ImageView
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:id="@+id/mainSearch"
+                android:padding="10dp"
+                android:src="@drawable/main_screen_search_button" />
+        </com.andexert.library.RippleView>
+    </RelativeLayout>
+</android.support.design.widget.AppBarLayout>

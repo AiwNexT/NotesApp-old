@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:layout_gravity="bottom"
+    android:gravity="center_horizontal"
+    android:background="@drawable/add_note_action_panel">
+
+    <com.andexert.library.RippleView
+        android:id="@+id/textRipple"
+        android:layout_width="?attr/actionBarSize"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        app:rv_centered="true"
+        app:rv_color="@android:color/black"
+        app:rv_rippleDuration="200">
+
+        <ImageView
+            android:id="@+id/editAddNote"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:src="@drawable/add_note_add_text_button" />
+    </com.andexert.library.RippleView>
+
+    <com.andexert.library.RippleView
+        android:id="@+id/audioRipple"
+        android:layout_width="?attr/actionBarSize"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        app:rv_centered="true"
+        app:rv_color="@android:color/black"
+        app:rv_rippleDuration="200">
+
+        <ImageView
+            android:id="@+id/editAddAudio"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:src="@drawable/add_note_add_audio_button" />
+    </com.andexert.library.RippleView>
+
+    <com.andexert.library.RippleView
+        android:id="@+id/listRipple"
+        android:layout_width="?attr/actionBarSize"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        app:rv_centered="true"
+        app:rv_color="@android:color/black"
+        app:rv_rippleDuration="200">
+
+        <ImageView
+            android:id="@+id/editAddList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:src="@drawable/add_note_add_list_button" />
+    </com.andexert.library.RippleView>
+
+    <com.andexert.library.RippleView
+        android:id="@+id/imageRipple"
+        android:layout_width="?attr/actionBarSize"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        app:rv_centered="true"
+        app:rv_color="@android:color/black"
+        app:rv_rippleDuration="200">
+
+        <ImageView
+            android:id="@+id/editAddImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:src="@drawable/add_note_add_picture_button" />
+    </com.andexert.library.RippleView>
+</LinearLayout>

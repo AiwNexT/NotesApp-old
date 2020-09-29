@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/main_screen_quick_message_bg"
+    android:layout_gravity="bottom"
+    android:layout_width="match_parent"
+    android:layout_height="48dp">
+
+    <com.andexert.library.RippleView
+        app:rv_rippleDuration="200"
+        app:rv_centered="true"
+        app:rv_color="@color/colorTextGray"
+        android:layout_marginTop="5dp"
+        android:id="@+id/audioRipple"
+        android:layout_width="?attr/actionBarSize"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true">
+
+        <ImageView
+            android:id="@+id/audioNote"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:paddingEnd="10dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/main_screen_quick_note_audio_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.andexert.library.RippleView>
+
+    <com.andexert.library.RippleView
+        app:rv_rippleDuration="300"
+        app:rv_centered="true"
+        app:rv_color="@color/colorTextGray"
+        android:layout_marginTop="5dp"
+        android:layout_toStartOf="@id/audioRipple"
+        android:layout_toLeftOf="@id/audioRipple"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/quickNote"
+            android:textSize="14sp"
+            android:text="Quick note..."
+            android:layout_alignParentBottom="true"
+            android:gravity="center_vertical|start"
+            android:paddingStart="18dp"
+            android:paddingLeft="18dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorTextGray"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.andexert.library.RippleView>
+</RelativeLayout>

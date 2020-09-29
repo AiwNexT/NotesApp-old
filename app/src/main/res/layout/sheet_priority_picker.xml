@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:weightSum="4"
+    android:paddingStart="20dp"
+    android:paddingLeft="20dp"
+    android:gravity="center"
+    android:paddingEnd="20dp"
+    android:paddingRight="20dp"
+    android:background="@drawable/add_note_change_priority_bottom_bg"
+    android:layout_height="wrap_content"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+    <com.andexert.library.RippleView
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        app:rv_rippleDuration="200"
+        app:rv_centered="true"
+        app:rv_color="@color/colorTextDargGray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/priorityLow"
+            android:textSize="14sp"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:text="LOW"
+            android:background="@drawable/add_note_low_priority_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </com.andexert.library.RippleView>
+
+    <com.andexert.library.RippleView
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        app:rv_rippleDuration="200"
+        app:rv_centered="true"
+        app:rv_color="@color/colorTextDargGray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/priorityMedium"
+            android:textSize="14sp"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:text="MEDIUM"
+            android:background="@drawable/add_done_medium_priority_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </com.andexert.library.RippleView>
+
+    <com.andexert.library.RippleView
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        app:rv_rippleDuration="200"
+        app:rv_centered="true"
+        app:rv_color="@color/colorTextDargGray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/priorityHigh"
+            android:textSize="14sp"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:text="HIGH"
+            android:background="@drawable/add_note_high_priority_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </com.andexert.library.RippleView>
+
+    <com.andexert.library.RippleView
+        app:rv_rippleDuration="200"
+        app:rv_centered="true"
+        app:rv_color="@color/colorTextDargGray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/priorityUrgent"
+            android:singleLine="true"
+            android:textSize="14sp"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:text="URGENT"
+            android:background="@drawable/add_note_urgent_priority_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </com.andexert.library.RippleView>
+</LinearLayout>

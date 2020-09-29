@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:gravity="top|center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:background="@drawable/list_circle"
+        android:button="@drawable/checkbox_selector"
+        android:checked="false"
+        android:layout_width="4dp"
+        android:layout_height="4dp" />
+
+    <TextView
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:id="@+id/mainListItemText"
+        android:textSize="8sp"
+        android:maxLines="1"
+        android:textColorHint="@color/colorTextGray"
+        android:textColor="@color/colorTextDargGray"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_gravity="center_vertical"
+        android:background="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

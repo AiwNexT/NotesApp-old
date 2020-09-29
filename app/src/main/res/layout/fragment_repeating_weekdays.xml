@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <HorizontalScrollView
+        android:scrollbars="none"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:id="@+id/monday"
+                android:layout_width="55dp"
+                android:layout_height="25dp"
+                android:background="@drawable/weekday_picked"
+                android:text="MON"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/tuesday"
+                android:layout_width="55dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginStart="6dp"
+                android:background="@drawable/weekday_unpicked"
+                android:text="TUE"
+                android:textColor="@color/colorHintLight"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/wednesday"
+                android:layout_width="55dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginStart="6dp"
+                android:background="@drawable/weekday_picked"
+                android:text="WED"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/thursday"
+                android:layout_width="55dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginStart="6dp"
+                android:background="@drawable/weekday_unpicked"
+                android:text="THU"
+                android:textColor="@color/colorHintLight"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/friday"
+                android:layout_width="55dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginStart="6dp"
+                android:background="@drawable/weekday_unpicked"
+                android:text="FRI"
+                android:textColor="@color/colorHintLight"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/saturday"
+                android:layout_width="55dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginStart="6dp"
+                android:background="@drawable/weekday_unpicked"
+                android:text="SAT"
+                android:textColor="@color/colorHintLight"
+                android:textSize="14sp" />
+
+            <Button
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:id="@+id/sunday"
+                android:layout_width="55dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginStart="6dp"
+                android:background="@drawable/weekday_unpicked"
+                android:text="SUN"
+                android:textColor="@color/colorHintLight"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</LinearLayout>

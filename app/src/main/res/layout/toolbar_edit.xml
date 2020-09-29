@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.andexert.library.RippleView
+            app:rv_centered="true"
+            app:rv_rippleDuration="150"
+            android:id="@+id/mainMenuRipple"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="18dp"
+                android:src="@drawable/add_note_back_button" />
+        </com.andexert.library.RippleView>
+
+        <com.andexert.library.RippleView
+            app:rv_centered="true"
+            app:rv_rippleDuration="150"
+            android:layout_width="36dp"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:id="@+id/archiveNoteRipple"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/archiveNote"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:src="@drawable/add_note_archive" />
+        </com.andexert.library.RippleView>
+
+        <com.andexert.library.RippleView
+            android:id="@+id/addNotificationRipple"
+            app:rv_centered="true"
+            app:rv_rippleDuration="150"
+            android:layout_width="36dp"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_toLeftOf="@id/archiveNoteRipple"
+            android:layout_toStartOf="@id/archiveNoteRipple">
+
+            <ImageView
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:id="@+id/addNotification"
+                android:padding="8dp"
+                android:src="@drawable/add_note_unbelled_icon" />
+        </com.andexert.library.RippleView>
+
+        <com.andexert.library.RippleView
+            android:id="@+id/pinNoteRipple"
+            app:rv_centered="true"
+            app:rv_rippleDuration="150"
+            android:layout_width="36dp"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_toLeftOf="@id/addNotificationRipple"
+            android:layout_toStartOf="@id/addNotificationRipple">
+
+            <ImageView
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:id="@+id/pinNote"
+                android:padding="8dp"
+                android:src="@drawable/add_note_unpinned_button" />
+        </com.andexert.library.RippleView>
+
+        <com.andexert.library.RippleView
+            android:id="@+id/lockNoteRipple"
+            app:rv_centered="true"
+            app:rv_rippleDuration="150"
+            android:layout_width="36dp"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_toLeftOf="@id/pinNoteRipple"
+            android:layout_toStartOf="@id/pinNoteRipple">
+
+            <ImageView
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:id="@+id/lockNote"
+                android:padding="8dp"
+                android:src="@drawable/add_note_unlocked_button" />
+        </com.andexert.library.RippleView>
+    </RelativeLayout>
+</android.support.design.widget.AppBarLayout>

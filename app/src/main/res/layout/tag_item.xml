@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_marginRight="8dp"
+    android:layout_marginEnd="8dp"
+    android:paddingStart="8dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:layout_gravity="center_vertical"
+    android:gravity="center_vertical"
+    android:paddingEnd="8dp"
+    android:background="@drawable/add_note_tag_1_bg"
+    android:layout_height="30dp">
+
+    <TextView
+        android:textSize="12sp"
+        android:textColor="@color/colorTextGray"
+        android:text="#"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+
+    <example.testapp.na.tools.custom.views.ListText
+        android:singleLine="true"
+        android:inputType="textMultiLine"
+        android:imeOptions="actionDone"
+        android:maxLength="20"
+        android:id="@+id/editNoteTagText"
+        android:textColor="@color/colorTextGray"
+        android:hint="Add Tag"
+        android:textSize="12sp"
+        android:background="@android:color/transparent"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+</LinearLayout>

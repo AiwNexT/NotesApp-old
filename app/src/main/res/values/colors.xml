@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#252525</color>
+    <color name="colorPrimaryDark">#131313</color>
+    <color name="colorAccent">#FF5722</color>
+    
+    <color name="colorFabList">#03A9F4</color>
+    <color name="colorFabAlarm">#CDDC39</color>
+    <color name="colorFabNote">#FFC107</color>
+    <color name="colorFabClose">#4A4A4A</color>
+
+    <color name="colorNotificationControls">#EEEEEE</color>
+    <color name="colorTextGray">#9b9b9b</color>
+    <color name="colorTextDargGray">#4a4a4a</color>
+    <color name="colorTitleGray">#424242</color>
+
+    <color name="colorHintLight">#a0a0a0</color>
+
+    <color name="colorBackground">#F6F6F6</color>
+
+    <color name="colorSeekBar">#cddc39</color>
+
+    <color name="coloListItemMain">#1c1c1c</color>
+
+    <color name="colorPinned">#ffeb3b</color>
+    <color name="colorLocked">#9e9e9e</color>
+    <color name="colorLow">#8bc34a</color>
+    <color name="colorMedium">#03a9f4</color>
+    <color name="colorHigh">#ff9800</color>
+    <color name="colorUrgent">#f44336</color>
+</resources>

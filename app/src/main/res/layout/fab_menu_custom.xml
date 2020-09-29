@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fabMenu"
+    android:layout_width="160dp"
+    android:layout_height="300dp"
+    android:layout_gravity="bottom|end"
+    android:layout_marginBottom="52dp"
+    android:descendantFocusability="afterDescendants">
+
+    <RelativeLayout
+        android:id="@+id/fabAddNoteLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="6dp"
+        android:descendantFocusability="afterDescendants">
+
+        <android.support.design.widget.FloatingActionButton
+            android:scaleType="center"
+            android:id="@+id/fabAddNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="6dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="6dp"
+            android:src="@drawable/main_screen_add_note_button_icon"
+            app:backgroundTint="@color/colorFabNote"
+            app:borderWidth="0dp"
+            app:elevation="6dp"
+            app:fabCustomSize="44dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_toLeftOf="@id/fabAddNote"
+            android:layout_toStartOf="@id/fabAddNote"
+            android:background="@drawable/main_screen_add_buttons_note_bg"
+            android:gravity="center"
+            android:paddingBottom="2dp"
+            android:singleLine="true"
+            android:text="Note"
+            android:textSize="11sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fabAddAlarmLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="6dp"
+        android:descendantFocusability="afterDescendants">
+
+        <android.support.design.widget.FloatingActionButton
+            android:scaleType="center"
+            android:id="@+id/fabAddAlarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="4dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/main_screen_add_alarm_button_icon"
+            app:backgroundTint="@color/colorFabAlarm"
+            app:borderWidth="0dp"
+            app:elevation="6dp"
+            app:fabCustomSize="44dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_toLeftOf="@id/fabAddAlarm"
+            android:layout_toStartOf="@id/fabAddAlarm"
+            android:background="@drawable/main_screen_add_buttons_note_bg"
+            android:gravity="center"
+            android:paddingBottom="2dp"
+            android:singleLine="true"
+            android:text="Alarm"
+            android:textSize="11sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fabAddListLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="6dp"
+        android:descendantFocusability="afterDescendants">
+
+        <android.support.design.widget.FloatingActionButton
+            android:scaleType="center"
+            android:id="@+id/fabAddList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="4dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/main_screen_add_list_button_icon"
+            app:backgroundTint="@color/colorFabList"
+            app:borderWidth="0dp"
+            app:elevation="6dp"
+            app:fabCustomSize="44dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_toLeftOf="@id/fabAddList"
+            android:layout_toStartOf="@id/fabAddList"
+            android:background="@drawable/main_screen_add_buttons_note_bg"
+            android:gravity="center"
+            android:paddingBottom="2dp"
+            android:singleLine="true"
+            android:text="List"
+            android:textSize="11sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fabCloseLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="6dp"
+        android:descendantFocusability="afterDescendants">
+
+        <android.support.design.widget.FloatingActionButton
+            android:scaleType="center"
+            android:id="@+id/fabCLose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="4dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/main_screen_close_fab_button_icon"
+            app:backgroundTint="@color/colorFabClose"
+            app:borderWidth="0dp"
+            app:elevation="6dp"
+            app:fabCustomSize="44dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_toLeftOf="@id/fabCLose"
+            android:layout_toStartOf="@id/fabCLose"
+            android:background="@drawable/main_screen_add_buttons_note_bg"
+            android:gravity="center"
+            android:paddingBottom="2dp"
+            android:singleLine="true"
+            android:text="Close"
+            android:textSize="11sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fabAddLayout"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_gravity="bottom">
+
+        <android.support.design.widget.FloatingActionButton
+            android:scaleType="center"
+            android:id="@+id/fabAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="12dp"
+            android:src="@drawable/main_screen_floating_plus_button_plus"
+            app:backgroundTint="@color/colorAccent"
+            app:borderWidth="0dp"
+            app:elevation="2dp"
+            app:fabCustomSize="56dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_toLeftOf="@id/fabAdd"
+            android:layout_toStartOf="@id/fabAdd"
+            android:background="@drawable/main_screen_add_buttons_compose_bg"
+            android:gravity="center"
+            android:paddingBottom="2dp"
+            android:paddingEnd="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingStart="8dp"
+            android:singleLine="true"
+            android:text="Compose"
+            android:textColor="@android:color/white"
+            android:textSize="11sp" />
+    </RelativeLayout>
+</FrameLayout>
